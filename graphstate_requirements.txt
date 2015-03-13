@@ -1,0 +1,2 @@
+GraphState>=1.0.2
+PyGraphine>=1.0.2
