@@ -6,7 +6,7 @@
 Welcome to GraphState and Graphine documentation!
 =================================================
 
-**GraphState** and **Graphine** are graph manipulation libraries. The key feature of these libraries is usage of generalization
+`GraphState and Graphine <https://github.com/batya239/graph-state/>`_ are graph manipulation libraries. The key feature of these libraries is usage of generalization
 of graph representation offered by B. G. Nickel et al. In this approach graph is represented in some unique 'canonical' form
 that depends only on its combinatorial type. The uniqueness of graph representation gives an efficient way for isomorphism finding,
 searching for subgraphs and other graph manipulation tasks. Though offered libraries were originally designed for Feynman graphs,
@@ -91,6 +91,7 @@ in hard reference map hidden in :class:`Graph` backend.
 .. automodule:: graphine.generator.sym_coef
    :members:
 
+Examples of generation routines can be found in `our repository <https://github.com/batya239/graph-state/tree/master/Graphine/examples>`_.
 
 Indices and tables
 ==================
