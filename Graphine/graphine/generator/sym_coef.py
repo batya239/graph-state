@@ -19,6 +19,7 @@ except ImportError:
 def symmetry_coefficient(gs):
     """
     Calculates symmetries factor of given diagram
+
     :param gs: must be instance of `graphine.Graph`
     """
     gs = gs.to_graph_state()

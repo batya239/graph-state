@@ -26,11 +26,22 @@ emptySetDict = lambda: collections.defaultdict(set)
 
 
 def generate_fields(graph_topology,
-             possible_fields,
-             possible_external_fields,
-             possible_vertices,
-             ignore_cycles,
-             unlabeled_legs):
+                    possible_fields,
+                    possible_external_fields,
+                    possible_vertices,
+                    ignore_cycles,
+                    unlabeled_legs):
+    """
+    Function allows to insert fields according giving rules for given topology graph
+
+    :param graph_topology: base topology graph for which fields will be inserted
+    :param possible_fields: list of 2-letter words which represent possible internal fields of diagram
+    :param possible_external_fields: list of fields that can be applied to external legs
+    :param possible_vertices: list of words which represent rules for diagram vertices
+    :param ignore_cycles: `False` if result graphs can't have cycles TODO
+    :param unlabeled_legs: label legs with unique index (affects to calculation of symmetries coefficient)
+    :return: set of diagrams with inserted fields
+    """
     if not isinstance(graph_topology, str):
         graph_topology = str(graph_topology)
     graph_stub = graph_state_config_with_fields.from_str(graph_topology)

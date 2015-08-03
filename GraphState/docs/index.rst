@@ -72,10 +72,25 @@ in hard reference map hidden in :class:`Graph` backend.
    :members:
 
 :mod:`graphine.filters` module
-===============================
+==============================
 
 .. automodule:: graphine.filters
    :members:
+
+:mod:`graphine.generator` module
+=================================
+
+:mod:`graphine.generator` allows to generate Feynman graphs for wide range of HEP and Statistical physics models.
+
+.. automodule:: graphine.generator.topology
+   :members: get_topologies
+
+.. automodule:: graphine.generator.diagram_generator
+   :members:
+
+.. automodule:: graphine.generator.sym_coef
+   :members:
+
 
 Indices and tables
 ==================
